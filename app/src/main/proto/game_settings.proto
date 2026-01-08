@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option java_package = "com.example.gridify";
+option java_multiple_files =  true;
+
+message GameSettings{
+  int32 boundary = 9;
+  ProtoDifficulty protoDifficulty  =2 ;
+
+  enum ProtoDifficulty{
+    UNKNOWN  = 0;
+    EASY =1;
+    MEDIUM = 2;
+    HARD =3;
+      }
+}
+
